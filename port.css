@@ -210,7 +210,6 @@ nav ul li a:hover::after {
     transform: translateY(-10px);
 }
 
-
 /* <!-- -------------------Academic & Personal Projects------------------- --> */
 
 #project {
@@ -283,13 +282,11 @@ nav ul li a:hover::after {
     width: 60px;
     border-radius: 50%;
     text-align: center;
-
 }
 
 .pro:hover .layer {
     height: 100%;
 }
-
 
 /* <!-- --------------------------Contact----------------------------- --> */
 
@@ -386,26 +383,137 @@ form .btn2 {
     width: 100%;
     font-weight: 300;
     text-align: center;
-    padding: 25px 0;
+    padding: 10px 0;
     background: #262626;
     margin-top: 20px;
 }
 
-
 /* <!-- --------------------------Media Queries----------------------------- --> */
 
-@media only screen and (max-width: 600px) {
+nav .fas {
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
     #header {
         background-image: url(img/user.png);
     }
 
+    #about {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #certi {
+        padding: 15px 0px;
+    }
+
     .header-text {
-        margin-top: 100%;
+        margin-top: 155%;
         font-size: 14px;
     }
 
     .header-text h1 {
         font-size: 25px;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 20px;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 170px;
+        height: 100vh;
+        padding-top: 50px;
+        margin-top: 0px;
+        border-radius: 5px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+        margin-left: 10px;
+        margin-top: 20px;
+
+    }
+
+    nav ul .fas {
+        position: absolute;
+        left: 25px;
+        top: 25px;
+        cursor: pointer;
+    }
+
+    nav ul li a {
+        font-size: 17px;
+    }
+
+    .sub-title {
+        font-size: 20px;
+    }
+
+    .about-col-2 {
+        flex-basis: 100%;
+        font-size: 14px;
+        margin: auto;
+    }
+
+    .about-col-2 p {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 20px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .tab-content ul li {
+        font-size: 13px;
+        margin: 15px 0px;
+    }
+
+    .tab-content ul li span {
+        font-size: 14px;
+    }
+
+    .tab-title {
+        margin: 20px 0 30px;
+    }
+
+    .card-list {
+        margin-top: 75px;
+    }
+
+    .contact-left,
+    .contact-right {
+        flex-basis: 100%;
+        margin: 0px 15px;
+    }
+
+    .contact-right form {
+        margin: auto;
+    }
+
+    form .btn2 {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-top: 0px;
+    }
+    .copyright{
+        font-size: 10px;
+    
     }
 
 }
