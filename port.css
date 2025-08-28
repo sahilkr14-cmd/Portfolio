@@ -87,9 +87,14 @@ nav ul li a:hover::after {
 /* ------------------------ About ------------------------- */
 
 #about {
-    padding-top: 120px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 0px;
     color: #bcbcbc;
+}
+
+.container-about {
+    background: #2626267c;
+    padding: 65px 30px;
 }
 
 .row {
@@ -108,7 +113,7 @@ nav ul li a:hover::after {
     text-align: center;
     font-size: 27px;
     line-height: 45px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 
 }
 
@@ -123,7 +128,7 @@ nav ul li a:hover::after {
 .tab-title {
     display: flex;
     text-align: center;
-    margin: 40px 0 65px;
+    margin: 20px 0 65px;
 }
 
 .tab-title p {
@@ -157,7 +162,7 @@ nav ul li a:hover::after {
 
 .tab-content ul li {
     list-style: none;
-    margin: 40px 0;
+    margin: 25px 0;
     font-size: 25px;
 }
 
@@ -178,6 +183,11 @@ nav ul li a:hover::after {
 
 #certi {
     padding: 30px 0px;
+}
+
+.container-certi {
+    background: #2626267c;
+    padding: 65px 30px;
 }
 
 .card-list {
@@ -213,8 +223,13 @@ nav ul li a:hover::after {
 /* <!-- -------------------Academic & Personal Projects------------------- --> */
 
 #project {
-    padding: 30px 0px;
-    margin-top: 60px;
+    padding: 0px 0;
+    margin-top: 0px;
+}
+
+.container-project {
+    background: #2626267c;
+    padding: 65px 30px;
 }
 
 .project-list {
@@ -291,7 +306,12 @@ nav ul li a:hover::after {
 /* <!-- --------------------------Contact----------------------------- --> */
 
 #contact {
-    margin-top: 90px;
+    margin-top: 30px;
+}
+
+.container-contact {
+    background: #2626267c;
+    padding: 75px 10px 30px;
 }
 
 .contact-left {
@@ -511,9 +531,10 @@ nav .fas {
         font-size: 14px;
         margin-top: 0px;
     }
-    .copyright{
+
+    .copyright {
         font-size: 10px;
-    
+
     }
 
 }
