@@ -1,21 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
     font-family: "Comic Relief", "poppins";
     box-sizing: border-box;
 }
-
 body {
     background: black;
     color: white;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 #header {
     width: 100%;
     height: 100vh;
@@ -24,11 +20,9 @@ html {
     background-position: center;
 
 }
-
 .container {
     padding: 10px 6%;
 }
-
 nav {
     display: flex;
     align-items: center;
@@ -36,7 +30,6 @@ nav {
     flex-wrap: wrap;
     margin-top: 10px;
 }
-
 nav ul {
     border-radius: 10px;
     margin: 10px auto;
@@ -48,20 +41,17 @@ nav ul {
     opacity: 0;
     animation: slideTop .5s ease forwards;
 }
-
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 35px;
 }
-
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 20px;
     position: relative;
 }
-
 @keyframes slideTop {
     0% {
         transform: translateY(100px);
@@ -73,7 +63,6 @@ nav ul li a {
         opacity: 1;
     }
 }
-
 nav ul li a::after {
     content: "";
     width: 0;
@@ -84,11 +73,9 @@ nav ul li a::after {
     bottom: -6px;
     transition: 0.5s;
 }
-
 nav ul li a:hover::after {
     width: 100%;
 }
-
 .header-text {
     margin-top: 20%;
     font-size: 25px;
@@ -96,7 +83,6 @@ nav ul li a:hover::after {
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
 }
-
 @keyframes slideBottom {
     0% {
         transform: translateY(-100px);
@@ -108,16 +94,13 @@ nav ul li a:hover::after {
         opacity: 1;
     }
 }
-
 .header-text h1 {
     margin-top: 20px;
     font-size: 55px;
 }
-
 .header-text h1 span {
     color: #ff004f;
 }
-
 /* ------------------------ About ------------------------- */
 
 #about {
@@ -125,32 +108,26 @@ nav ul li a:hover::after {
     padding-bottom: 20px;
     color: #bcbcbc;
 }
-
 .container-about {
     background: #2626267c;
     padding: 65px 30px;
 }
-
 .row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
 .about-col-2 {
     text-align: center;
     flex-basis: 80%;
     margin-left: 125px;
 }
-
 .about-col-2 p {
     text-align: center;
     font-size: 27px;
     line-height: 45px;
     margin-bottom: 40px;
-
 }
-
 .sub-title {
     text-align: center;
     font-size: 35px;
@@ -161,19 +138,16 @@ nav ul li a:hover::after {
 .sub-title span{
     color: #ff004f;
 }
-
 .tab-title {
     display: flex;
     text-align: center;
     margin: 20px 0 65px;
 }
-
 .tab-title p {
     text-align: center;
     margin: auto;
     font-size: 27px;
 }
-
 .tab-links {
     margin-right: 50px;
     font-size: 25px;
@@ -181,7 +155,6 @@ nav ul li a:hover::after {
     cursor: pointer;
     position: relative;
 }
-
 .tab-links::after {
     content: '';
     width: 0;
@@ -192,48 +165,39 @@ nav ul li a:hover::after {
     bottom: -8px;
     transition: 0.5s;
 }
-
 .tab-links.active-link::after {
     width: 50%;
 }
-
 .tab-content ul li {
     list-style: none;
     margin: 25px 0;
     font-size: 25px;
 }
-
 .tab-content ul li span {
     color: #ff004f;
     font-size: 20px;
 }
-
 .tab-content {
     display: none;
 }
-
 .tab-content.active-tab {
     display: block;
 }
-
 /* -------------------Certifications And Achievements------------------- */
 
 #certifications {
     padding: 20px 0px;
 }
-
 .container-certi {
     background: #2626267c;
     padding: 65px 30px;
 }
-
 .card-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-gap: 40px;
     margin-top: 110px;
 }
-
 .card-list div {
     background: #262626;
     padding: 45px;
@@ -241,41 +205,35 @@ nav ul li a:hover::after {
     font-weight: 300;
     border-radius: 15px;
     transition: transform 0.5s;
+    box-shadow: 1px 1px 20px #ff004f;
 }
-
 .card-list div i {
     font-size: 40px;
     margin-bottom: 20px;
     color: #ff004f;
 }
-
 .card-list div h2 {
     font-size: 22px;
 }
-
 .card-list div:hover {
     transform: translateY(-10px);
 }
-
 /* <!-- -------------------Academic & Personal Projects------------------- --> */
 
 #project {
     padding: 0px 0;
     margin-top: 20px;
 }
-
 .container-project {
     background: #2626267c;
     padding: 65px 30px;
 }
-
 .project-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 70px;
 }
-
 .pro img {
     /* height: 80px; */
     width: 100%;
@@ -283,21 +241,15 @@ nav ul li a:hover::after {
     display: block;
     transition: transform 0.5s;
 }
-
 .pro {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    box-shadow: 1px 1px 20px #ff004f;
 }
-
-/* .project-list div{
-    background: #262626;
-    padding: 10px;
-} */
 .pro:hover img {
     transform: translateY(-10px);
 }
-
 .layer {
     width: 100%;
     height: 0;
@@ -316,13 +268,11 @@ nav ul li a:hover::after {
     font-size: 12px;
     transition: height 0.5s;
 }
-
 .layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
     font-size: 18px;
 }
-
 .layer a {
     margin-top: 20px;
     color: #ff004f;
@@ -335,47 +285,38 @@ nav ul li a:hover::after {
     border-radius: 50%;
     text-align: center;
 }
-
 .pro:hover .layer {
     height: 100%;
 }
-
 /* <!-- --------------------------Contact----------------------------- --> */
 
 #contact {
     margin-top: 20px;
 }
-
 .container-contact {
     background: #2626267c;
     padding: 75px 10px 30px;
 }
-
 .contact-left {
     flex-basis: 35%;
     margin-left: 30px;
 }
-
 .contact-right {
     flex-basis: 60%;
 }
-
 .contact-left p {
     margin-top: 30px;
     font-size: 15px;
 
 }
-
 .contact-left p i {
     color: #ff004f;
     margin-right: 15px;
     font-size: 20px;
 }
-
 .social {
     margin-top: 30px;
 }
-
 .social a {
     text-decoration: none;
     font-size: 30px;
@@ -384,12 +325,10 @@ nav ul li a:hover::after {
     display: inline-block;
     transition: transform 0.5s;
 }
-
 .social a:hover {
     color: #ff004f;
     transform: translateY(-5px);
 }
-
 .btn {
     display: block;
     border-radius: 6px;
@@ -401,21 +340,17 @@ nav ul li a:hover::after {
     color: #fff;
     transition: background 0.5s;
 }
-
 .btn:hover {
     background: #ff004f;
 }
-
 .btn.btn2 {
     display: inline-block;
     background: #ff004f;
 }
-
 .contact-right form {
     width: 90%;
     margin-left: 50px;
 }
-
 form input,
 form textarea {
     width: 100%;
@@ -428,14 +363,12 @@ form textarea {
     font-size: 18px;
     border-radius: 8px;
 }
-
 form .btn2 {
     padding: 14px 60px;
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
 }
-
 .copyright {
     width: 100%;
     font-weight: 300;
@@ -443,26 +376,21 @@ form .btn2 {
     padding: 5px 0;
     background: #262626;
 }
-
 .right {
     display: none;
 }
-
 /* <!-- --------------------------Media Queries----------------------------- --> */
 
 nav .fas {
     display: none;
 }
-
 @media only screen and (max-width: 600px) {
     #header {
         background-image: none;
     }
-
     .right {
         display: block;
     }
-
     .right img {
         display: block;
         width: 200px;
@@ -474,7 +402,6 @@ nav .fas {
         animation: slideRight 0.8s ease forwards;
         animation-delay: .7s;
     }
-
     @keyframes slideRight {
         0% {
             transform: translateX(0px);
@@ -486,25 +413,20 @@ nav .fas {
             opacity: 1;
         }
     }
-
     #about {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-
     #project {
         margin-bottom: 20px;
     }
-
     #certifications {
         padding: 15px 0px;
         margin-bottom: 20px;
     }
-
     #contact {
         margin-top: 20px;
     }
-
     .header-text {
         margin-top: 30px;
         font-size: 14px;
@@ -512,7 +434,6 @@ nav .fas {
         animation: slideBottom 1s ease forwards;
         animation-delay: 1s;
     }
-
     @keyframes slideBottom {
         0% {
             transform: translateY(-100px);
@@ -524,11 +445,9 @@ nav .fas {
             opacity: 1;
         }
     }
-
     .header-text h1 {
         font-size: 25px;
     }
-
     nav .fas {
         display: block;
         font-size: 20px;
@@ -536,7 +455,6 @@ nav .fas {
         top: 25px;
         right: 20px;
     }
-
     nav ul {
         background: #ff004f;
         position: fixed;
@@ -550,7 +468,6 @@ nav .fas {
         z-index: 2;
         transition: right 0.5s;
     }
-
     nav ul li {
         display: block;
         margin: 25px;
@@ -558,18 +475,15 @@ nav .fas {
         margin-top: 20px;
 
     }
-
     nav ul .fas {
         position: absolute;
         left: 25px;
         top: 25px;
         cursor: pointer;
     }
-
     nav ul li a {
         font-size: 17px;
     }
-
     nav ul li a::after {
         content: "";
         width: 0;
@@ -580,91 +494,80 @@ nav .fas {
         bottom: -6px;
         transition: 0.5s;
     }
-
     nav ul li a:hover::after {
         width: 100%;
     }
-
     .sub-title {
         font-size: 20px;
     }
-
     .about-col-2 {
         flex-basis: 100%;
         font-size: 14px;
         margin: auto;
     }
-
     .about-col-2 p {
         font-size: 14px;
         line-height: 25px;
         margin-bottom: 20px;
     }
-
     .tab-links {
         font-size: 16px;
         margin-right: 20px;
     }
-
     .tab-content ul li {
         font-size: 13px;
         margin: 15px 0px;
     }
-
     .tab-content ul li span {
         font-size: 14px;
     }
-
     .tab-title {
         margin: 20px 0 30px;
     }
-
     .card-list {
         margin-top: 75px;
     }
-
     .card-list div {
         font-size: 12px;
     }
-
     .card-list div h2 {
         font-size: 16px;
     }
-
     .card-list div i {
         font-size: 30px;
     }
-
     .project-list {
         margin-top: 60px;
     }
-
     .contact-left,
     .contact-right {
         flex-basis: 100%;
         margin: 0px 15px;
     }
-
     .contact-right form {
         margin: auto;
     }
-
     .container-contact {
         padding: 65px 10px 30px;
     }
-
     form .btn2 {
         padding: 10px 20px;
         font-size: 14px;
         margin-top: 0px;
     }
-
     .social a {
         font-size: 20px;
     }
-
     .copyright {
         font-size: 10px;
     }
-
+}
+#msg{
+    display: block;
+    color: #61b752;
+    margin-top: -40px;
+    margin-left: 50px;
+}
+#msg i{
+    color: gray;
 }
