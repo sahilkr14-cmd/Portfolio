@@ -44,6 +44,9 @@ nav ul {
     border: 1px solid #ff004f;
     text-decoration: none;
     padding: 10px 15px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
 }
 
 nav ul li {
@@ -57,6 +60,18 @@ nav ul li a {
     text-decoration: none;
     font-size: 20px;
     position: relative;
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 nav ul li a::after {
@@ -77,6 +92,21 @@ nav ul li a:hover::after {
 .header-text {
     margin-top: 20%;
     font-size: 25px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 }
 
 .header-text h1 {
@@ -92,7 +122,7 @@ nav ul li a:hover::after {
 
 #about {
     padding-top: 25px;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
     color: #bcbcbc;
 }
 
@@ -186,7 +216,7 @@ nav ul li a:hover::after {
 /* -------------------Certifications And Achievements------------------- */
 
 #certifications {
-    padding: 30px 0px;
+    padding: 20px 0px;
 }
 
 .container-certi {
@@ -228,7 +258,7 @@ nav ul li a:hover::after {
 
 #project {
     padding: 0px 0;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 .container-project {
@@ -310,7 +340,7 @@ nav ul li a:hover::after {
 /* <!-- --------------------------Contact----------------------------- --> */
 
 #contact {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .container-contact {
@@ -407,8 +437,12 @@ form .btn2 {
     width: 100%;
     font-weight: 300;
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0;
     background: #262626;
+}
+
+.right {
+    display: none;
 }
 
 /* <!-- --------------------------Media Queries----------------------------- --> */
@@ -419,25 +453,73 @@ nav .fas {
 
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url(img/user.png);
+        background-image: none;
+    }
+
+    .right {
+        display: block;
+    }
+
+    .right img {
+        display: block;
+        width: 200px;
+        height: 200px;
+        border: 3px solid #ff004f;
+        border-radius: 50%;
+        margin: auto;
+        margin-top: 50%;
+        animation: slideBottom 0.8s ease forwards;
+        animation-delay: .7s;
+    }
+
+    @keyframes slideBottom {
+        0% {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
     }
 
     #about {
         padding-top: 20px;
-        padding-bottom: 0px;
+        padding-bottom: 20px;
+    }
+
+    #project {
+        margin-bottom: 20px;
     }
 
     #certifications {
         padding: 15px 0px;
+        margin-bottom: 20px;
     }
 
     #contact {
-        margin-top: 15px;
+        margin-top: 20px;
     }
 
     .header-text {
-        margin-top: 100%;
+        margin-top: 30px;
         font-size: 14px;
+        opacity: 0;
+        animation: slideBottom 1s ease forwards;
+        animation-delay: 1s;
+    }
+
+    @keyframes slideBottom {
+        0% {
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
     }
 
     .header-text h1 {
