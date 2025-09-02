@@ -220,6 +220,11 @@ nav ul li a:hover::after {
     margin-bottom: 20px;
     color: #ff004f;
 }
+.card-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
 .card-list div h2 {
     font-size: 22px;
 }
@@ -283,6 +288,7 @@ nav ul li a:hover::after {
 }
 .layer p{
     font-family: "Libertinus Serif Display", system-ui;
+    font-weight: 600;
 }
 .layer a {
     margin-top: 20px;
@@ -553,10 +559,13 @@ nav .fas {
         font-size: 16px;
     }
     .card-list div p{
-    font-size: 12px;
+    font-size: 10px;
     }
     .card-list div i {
         font-size: 30px;
+    }
+    .card-list div a{
+        font-size: 10px;
     }
     .project-list {
         margin-top: 60px;
@@ -584,13 +593,14 @@ nav .fas {
         font-size: 10px;
     }
     .layer h3{
-        margin-bottom: 15px;
-        font-size: 16px;
+        margin-bottom: 12px;
+        font-size: 14px;
     }
     .layer p{
-        font-size: 10px;
+        font-size: 9px;
         font-family: "Libertinus Serif Display", system-ui;
         margin-top: -5px;
+        font-weight: 400;
     }
     .layer a {
         margin-top: 14px;
