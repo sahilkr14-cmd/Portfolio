@@ -17,7 +17,6 @@ Live Demo 👉 sahilkumarsharma.onrender.com / (https://sahilkumarsharma.onrende
 - **Hosting:** Render  
 
 📂 Project Structure
-.
 ├── index.html        # Main landing page
 ├── /assets           # Images, icons, and static resources
 ├── /css              # Stylesheets
