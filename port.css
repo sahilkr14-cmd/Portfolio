@@ -191,6 +191,37 @@ nav ul li a:hover::after {
 .tab-content.active-tab {
     display: block;
 }
+.box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 60px 105px;
+    font-size: 25px; 
+    margin-left: 20px;
+}
+.box-item{
+    margin-left: -25%;
+    padding: 10px 95px;
+}
+.box-item .text{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.box-item .bar{
+    position: relative;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #ff004f, #970936);
+    text-align: center;
+    left: 58%;
+    bottom: 25px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.box-item .text-bar{
+    margin-left: -55%;
+}
+
 /* -------------------Certifications And Achievements------------------- */
 
 #certifications {
@@ -259,6 +290,7 @@ nav ul li a:hover::after {
     position: relative;
     overflow: hidden;
     box-shadow: 1px 1px 20px #ff004f;
+    height: 95%;
 }
 .pro:hover img {
     transform: translateY(-10px);
@@ -281,29 +313,38 @@ nav ul li a:hover::after {
     font-size: 12px;
     transition: height 0.5s;
 }
+
 .layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 15px;
 }
 .layer p{
     font-family: "Libertinus Serif Display", system-ui;
     font-weight: 600;
+    font-size: 12px;
 }
 .layer a {
-    margin-top: 20px;
+    margin-top: 10px;
     color: #ff004f;
     text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
+    font-size: 15px;
+    line-height: 50px;
     background: #fff;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     text-align: center;
 }
 .pro:hover .layer {
     height: 100%;
+}
+.layer .plane a{
+    border-radius: 0px;
+    background: none;
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
 }
 /* <!-- --------------------------Contact----------------------------- --> */
 
@@ -402,6 +443,9 @@ nav .fas {
     display: none;
 }
 @media only screen and (max-width: 700px) {
+    body{
+        width: 150%;
+    }
     #header {
         background-image: none;
     }
@@ -473,7 +517,7 @@ nav .fas {
         font-size: 20px;
         position: absolute;
         top: 25px;
-        right: 20px;
+        right: -125px;
     }
     nav ul {
         background: #ff004f;
@@ -533,6 +577,8 @@ nav .fas {
     }
     .about-col-2 .title{
         font-weight: 100;
+        margin-left: -30px;
+        padding: 0px 30px;
     }
     .tab-links {
         font-size: 16px;
@@ -548,6 +594,26 @@ nav .fas {
     }
     .tab-content ul li span{
         font-size: 15px;
+    }
+    .box{
+        font-size: 15px; 
+        margin-left: 0px;
+    }
+    .box-item{
+        margin-left: 0;
+        padding: 10px 20px;
+    }
+    .box-item .text{
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        margin-left: -50%;
+    }
+    .box-item .bar {
+        bottom: 15px;
+    }
+    .box-item .text-bar {
+        margin-left: 0;
     }
     .card-list {
         margin-top: 75px;
@@ -579,7 +645,13 @@ nav .fas {
         margin: auto;
     }
     .container-contact {
-        padding: 65px 10px 30px;
+        padding: 65px 35px;
+    }
+    .container-certi {
+        padding: 65px 70px;
+    }
+    .container-project {
+        padding: 65px 70px;
     }
     form .btn2 {
         padding: 10px 20px;

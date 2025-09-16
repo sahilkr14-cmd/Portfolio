@@ -34,3 +34,24 @@ form.addEventListener('submit', e => {
         })
         .catch(error => console.error('Error!', error.message))
 })
+    let bars = document.querySelectorAll(".bar");
+    let mq = window.matchMedia("(max-width: 768px)");
+
+    bars.forEach(bar => {
+        let progress = 0;
+
+        // Different targets for desktop vs mobile
+        let desktopTarget = parseInt(bar.getAttribute("data-target"));
+        let mobileTarget = parseInt(bar.getAttribute("data-target-mobile")) || desktopTarget;
+
+        let target = mq.matches ? mobileTarget : desktopTarget;
+
+        let interval = setInterval(() => {
+            if (progress < target) {
+                progress++;
+                bar.style.width = progress + "%";
+            } else {
+                clearInterval(interval);
+            }
+        }, 30);
+    });
