@@ -443,9 +443,6 @@ nav .fas {
     display: none;
 }
 @media only screen and (max-width: 700px) {
-    body{
-        width: 150%;
-    }
     #header {
         background-image: none;
     }
@@ -517,7 +514,7 @@ nav .fas {
         font-size: 20px;
         position: absolute;
         top: 25px;
-        right: -125px;
+        right: 0px;
     }
     nav ul {
         background: #ff004f;
@@ -597,11 +594,11 @@ nav .fas {
     }
     .box{
         font-size: 15px; 
-        margin-left: 0px;
+        margin-left: -30px;
     }
     .box-item{
         margin-left: 0;
-        padding: 10px 20px;
+        padding: 10px 0px;
     }
     .box-item .text{
         font-size: 18px;
@@ -611,6 +608,7 @@ nav .fas {
     }
     .box-item .bar {
         bottom: 15px;
+        left: 50%;
     }
     .box-item .text-bar {
         margin-left: 0;
