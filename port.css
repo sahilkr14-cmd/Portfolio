@@ -206,19 +206,27 @@ nav ul li a:hover::after {
 .box-item .text{
     font-size: 18px;
     margin-top: 20px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+}
+.box-item .bar-box{
+    width: 50%;          /* Full width */
+    background: #380a0a;  /* Light grey background */
+    border-radius: 20px;  /* Rounded corners */
+    overflow: hidden;
+    height: 5px;         /* Height of the line */
+    margin: 20px 0;
+    margin-left: 50%;
 }
 .box-item .bar{
-    position: relative;
     height: 4px;
-    border-radius: 2px;
-    background: linear-gradient(90deg, #ff004f, #970936);
+    width: 0%;  /* Start from 0 */
+    background: linear-gradient(90deg, #ff004f, #db235d);
     text-align: center;
-    left: 58%;
-    bottom: 25px;
-    overflow: hidden;
-    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
 }
+
 .box-item .text-bar{
     margin-left: -55%;
 }
@@ -613,6 +621,9 @@ nav .fas {
     }
     .box-item .text-bar {
         margin-left: 0;
+    }
+    .box-item .bar-box{
+        margin-left: 30%;
     }
     .card-list {
         margin-top: 75px;
