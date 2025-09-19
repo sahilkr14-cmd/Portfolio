@@ -8,7 +8,6 @@
 body {
     background: black;
     color: white;
-    width: 105%;
 }
 html {
     scroll-behavior: smooth;
@@ -22,7 +21,7 @@ html {
 
 }
 .container {
-    padding: 10px 6%;
+    padding: 10px 10%;
 }
 nav {
     display: flex;
@@ -216,6 +215,7 @@ nav ul li a:hover::after {
     height: 5px;         /* Height of the line */
     margin: 20px 0;
     margin-left: 50%;
+    box-shadow: 0px 1px 8px #ff004f;
 }
 .box-item .bar{
     height: 4px;
@@ -229,6 +229,17 @@ nav ul li a:hover::after {
 
 .box-item .text-bar{
     margin-left: -55%;
+}
+.text-bar .level{
+    display: inline-block;
+    position: absolute;
+    font-size: 15px;
+    margin-top: -25px;
+    margin-left: 18%;
+}
+.box-item span{
+    margin-left: 22%;
+    color: #ff004f;
 }
 
 /* -------------------Certifications And Achievements------------------- */
@@ -523,7 +534,7 @@ nav .fas {
         font-size: 20px;
         position: absolute;
         top: 25px;
-        right: 0px;
+        right: 10px;
     }
     nav ul {
         background: #ff004f;
@@ -574,6 +585,7 @@ nav .fas {
         flex-basis: 100%;
         font-size: 14px;
         margin: auto;
+        width: 100%;
     }
     .about-col-2 p {
         font-size: 14px;
@@ -583,8 +595,6 @@ nav .fas {
     }
     .about-col-2 .title{
         font-weight: 100;
-        margin-left: -30px;
-        padding: 0px 30px;
     }
     .tab-links {
         font-size: 16px;
@@ -606,11 +616,12 @@ nav .fas {
         margin-left: -30px;
     }
     .box-item{
-        margin-left: 0;
+        margin-left: 10px;
         padding: 10px 0px;
+        width: 80%;
     }
     .box-item .text{
-        font-size: 18px;
+        font-size: 15px;
         margin-top: 20px;
         margin-bottom: 0px;
         margin-left: -50%;
@@ -624,6 +635,17 @@ nav .fas {
     }
     .box-item .bar-box{
         margin-left: 30%;
+        box-shadow: 0px 1px 8px #ff004f;
+    }
+    .text-bar .level{
+        display: inline-block;
+        position: absolute;
+        font-size: 10px;
+        right: 80px;
+        margin-top: 2px;
+    }
+    .box-item span{
+        margin-left: 0;
     }
     .card-list {
         margin-top: 75px;
@@ -658,7 +680,7 @@ nav .fas {
         padding: 65px 30px;
     }
     .container-certi {
-        padding: 65px 30px;
+        padding: 65px 40px;
     }
     .container-project {
         padding: 65px 50px;
